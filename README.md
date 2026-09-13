@@ -20,7 +20,7 @@
 
 ## สารบัญ (Table of Contents)
 
-- [1. ตารางสรุปผลงานปฏิบัติการ (Module Showcase Index)](#1-ตารางสรุปผลงานปฏิบัติการ-module-showcase-index)
+- [1. คลังภาพผลงานและตารางสรุปเชิงเทคนิค (Showcase & Technical Index)](#1-คลังภาพผลงานและตารางสรุปเชิงเทคนิค-showcase--technical-index)
 - [2. รายละเอียดเชิงลึกแต่ละโมดูล (Technical Module Breakdown)](#2-รายละเอียดเชิงลึกแต่ละโมดูล-technical-module-breakdown)
   - [Lab 01: Flutter State & Counter Architecture](#lab-01-flutter-state--counter-architecture)
   - [Lab 05: Mobile OS Quick Settings & Notification Drawer](#lab-05-mobile-os-quick-settings--notification-drawer)
@@ -33,77 +33,114 @@
 
 ---
 
-## 1. ตารางสรุปผลงานปฏิบัติการ (Module Showcase Index)
+## 1. คลังภาพผลงานและตารางสรุปเชิงเทคนิค (Showcase & Technical Index)
+
+### ผลการรันจริงบนอุปกรณ์จำลอง (Mobile Viewport Showcase)
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <h4>Lab 01: Flutter State & Counter Architecture</h4>
+      <div align="center">
+        <img src="docs/screenshots/01-lab01-counter-app.png" alt="Lab 01 Counter App" width="340px" />
+      </div>
+      <br />
+      <p align="center"><em>การจัดการสถานะภายใน Widget Tree ด้วย setState() และ Material 3 Counter</em></p>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <h4>Lab 05: Mobile OS Quick Settings & Notification Drawer</h4>
+      <div align="center">
+        <img src="docs/screenshots/02-lab05-quicksettings-drawer.png" alt="Lab 05 Quick Settings" width="340px" />
+      </div>
+      <br />
+      <p align="center"><em>แผงควบคุมระบบ Control Center และ Notification Feed สไตล์ Dark Theme</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <h4>Lab 06: COVID-19 Situation Dashboard & REST API</h4>
+      <div align="center">
+        <img src="docs/screenshots/03-lab06-covid-dashboard.png" alt="Lab 06 COVID Dashboard" width="340px" />
+      </div>
+      <br />
+      <p align="center"><em>การเชื่อมต่อ Asynchronous REST API สู่ Typed Model และแสดงผล Metric Cards</em></p>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <h4>Lab 07: Student Roster Management & Dynamic List</h4>
+      <div align="center">
+        <img src="docs/screenshots/04-lab07-student-roster.png" alt="Lab 07 Student Roster" width="340px" />
+      </div>
+      <br />
+      <p align="center"><em>ระบบลงทะเบียนรายชื่อนักศึกษาด้วย Dynamic ListView.builder และ Form Input</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <h4>Lab 08: Hardware Camera Viewfinder & Haptics</h4>
+      <div align="center">
+        <img src="docs/screenshots/05-lab08-camera-interface.png" alt="Lab 08 Camera Interface" width="340px" />
+      </div>
+      <br />
+      <p align="center"><em>การควบคุมเซนเซอร์กล้องฮาร์ดแวร์ บันทึกภาพ/วิดีโอ สลับเลนส์ และระบบสั่น Haptic Feedback</em></p>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <h4>Lab 09: GPS Geolocation & Map Routing</h4>
+      <div align="center">
+        <img src="docs/screenshots/06-lab09-gps-map-routing.png" alt="Lab 09 GPS Map Routing" width="340px" />
+      </div>
+      <br />
+      <p align="center"><em>การดึงพิกัดดาวเทียมเรียลไทม์ ปักหมุดแลนด์มาร์กย่าโม และระบบแผนที่นำทาง</em></p>
+    </td>
+  </tr>
+</table>
+
+### ตารางสรุปสถาปัตยกรรมและทักษะเชิงเทคนิค (Technical Competency Matrix)
 
 <table width="100%">
   <thead>
     <tr>
       <th width="12%" align="center">โมดูล</th>
-      <th width="28%" align="center">หัวข้อและทักษะทางเทคนิค</th>
-      <th width="25%" align="center">สถาปัตยกรรม & ไลบรารี</th>
-      <th width="35%" align="center">ผลการรันจริง (Mobile Viewport)</th>
+      <th width="32%" align="left">หัวข้อและทักษะทางวิศวกรรม</th>
+      <th width="36%" align="left">สถาปัตยกรรม & ไลบรารีหลัก</th>
+      <th width="20%" align="center">สถานะการทดสอบ</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td align="center"><code>lab01</code></td>
-      <td><strong>Flutter Counter & State</strong><br />ทำความเข้าใจโครงสร้าง Widget Tree, วงจรชีวิต Stateful Widget, และการอัปเดตสถานะด้วย <code>setState()</code></td>
-      <td>
-        • <code>flutter/material.dart</code><br />
-        • Theme Seed Color<br />
-        • FloatingActionButton
-      </td>
-      <td align="center"><img src="docs/screenshots/01-lab01-counter-app.png" alt="Lab 01 Counter App" width="85%" /></td>
+      <td><strong>Flutter Counter & State</strong><br />วงจรชีวิต Stateful Widget และการอัปเดตสถานะด้วย <code>setState()</code></td>
+      <td><code>flutter/material.dart</code>, Theme Seed Color, FloatingActionButton</td>
+      <td align="center"><img src="https://img.shields.io/badge/Verified-Passing-2ea44f?style=flat-square" alt="Passing" /></td>
     </tr>
     <tr>
       <td align="center"><code>lab05</code></td>
-      <td><strong>Mobile OS Quick Settings</strong><br />จำลองแผงควบคุมระบบ (Control Center) และแถบแจ้งเตือนระดับระบบปฏิบัติการ พร้อม Dark Theme</td>
-      <td>
-        • Custom Tile & Card Layouts<br />
-        • CircleAvatar Toggle State<br />
-        • Expanded Grid Controls
-      </td>
-      <td align="center"><img src="docs/screenshots/02-lab05-quicksettings-drawer.png" alt="Lab 05 Quick Settings" width="85%" /></td>
+      <td><strong>Mobile OS Quick Settings</strong><br />จำลองแผงควบคุมระบบ (Control Center) และแถบแจ้งเตือนระดับ OS</td>
+      <td>Custom Tile & Card Layouts, CircleAvatar Toggle State, Responsive Grid</td>
+      <td align="center"><img src="https://img.shields.io/badge/Verified-Passing-2ea44f?style=flat-square" alt="Passing" /></td>
     </tr>
     <tr>
       <td align="center"><code>lab06</code></td>
-      <td><strong>COVID-19 Situation Dashboard</strong><br />การเชื่อมต่อ Public REST API แบบ Asynchronous, แปลงข้อมูล JSON สู่ Typed Data Model และแดชบอร์ดสถิติ</td>
-      <td>
-        • <code>http: ^1.2.1</code><br />
-        • JSON Deserialization<br />
-        • LinearGradient & Card Metrics
-      </td>
-      <td align="center"><img src="docs/screenshots/03-lab06-covid-dashboard.png" alt="Lab 06 Covid Dashboard" width="85%" /></td>
+      <td><strong>COVID-19 Situation Dashboard</strong><br />การเชื่อมต่อ Public REST API แบบ Asynchronous แปลง JSON สู่ Data Model</td>
+      <td><code>http: ^1.2.1</code>, JSON Deserialization, LinearGradient & Card Metrics</td>
+      <td align="center"><img src="https://img.shields.io/badge/Verified-Passing-2ea44f?style=flat-square" alt="Passing" /></td>
     </tr>
     <tr>
       <td align="center"><code>lab07</code></td>
-      <td><strong>Student Roster Management</strong><br />ระบบลงทะเบียนและจัดการรายชื่อนักศึกษาด้วย Dynamic ListView, การจัดการหน่วยความจำถาวร และฟอร์มป้อนข้อมูล</td>
-      <td>
-        • <code>path_provider: ^2.1.2</code><br />
-        • <code>ListView.builder</code> Dynamic List<br />
-        • Keyboard Dismiss FocusScope
-      </td>
-      <td align="center"><img src="docs/screenshots/04-lab07-student-roster.png" alt="Lab 07 Student Roster" width="85%" /></td>
+      <td><strong>Student Roster Management</strong><br />ระบบจัดการรายชื่อด้วย Dynamic ListView, File Storage และ Form Handling</td>
+      <td><code>path_provider: ^2.1.2</code>, <code>ListView.builder</code>, Keyboard FocusScope</td>
+      <td align="center"><img src="https://img.shields.io/badge/Verified-Passing-2ea44f?style=flat-square" alt="Passing" /></td>
     </tr>
     <tr>
       <td align="center"><code>lab08</code></td>
-      <td><strong>Hardware Camera & Video</strong><br />การเข้าถึงเซนเซอร์กล้องฮาร์ดแวร์, สลับเลนส์หน้า-หลัง, บันทึกภาพนิ่ง/วิดีโอ, สั่นเตือน Haptic, และเซฟลงแกลเลอรี่</td>
-      <td>
-        • <code>camera: ^0.11.0+2</code><br />
-        • <code>gallery_saver_plus: ^3.2.0</code><br />
-        • <code>HapticFeedback.vibrate()</code>
-      </td>
-      <td align="center"><img src="docs/screenshots/05-lab08-camera-interface.png" alt="Lab 08 Camera" width="85%" /></td>
+      <td><strong>Hardware Camera & Video</strong><br />การเข้าถึงเซนเซอร์ฮาร์ดแวร์ สลับเลนส์หน้า-หลัง บันทึกวิดีโอ และเซฟลงแกลเลอรี่</td>
+      <td><code>camera: ^0.11.0+2</code>, <code>gallery_saver_plus</code>, <code>HapticFeedback</code></td>
+      <td align="center"><img src="https://img.shields.io/badge/Verified-Passing-2ea44f?style=flat-square" alt="Passing" /></td>
     </tr>
     <tr>
       <td align="center"><code>lab09</code></td>
-      <td><strong>GPS Geolocation & Mapping</strong><br />การดึงพิกัดดาวเทียมเรียลไทม์, ตรวจสอบสิทธิ์การเข้าถึงตำแหน่ง, เรนเดอร์แผนที่, ปักหมุดย่าโม และวาดเส้นทาง Polyline</td>
-      <td>
-        • <code>geolocator: ^14.0.3</code><br />
-        • <code>google_maps_flutter</code><br />
-        • <code>flutter_map: ^8.3.2</code>
-      </td>
-      <td align="center"><img src="docs/screenshots/06-lab09-gps-map-routing.png" alt="Lab 09 GPS Map Routing" width="85%" /></td>
+      <td><strong>GPS Geolocation & Mapping</strong><br />ดึงพิกัดดาวเทียมเรียลไทม์ ตรวจสิทธิ์ Location ปักหมุดย่าโม และระบบแผนที่</td>
+      <td><code>geolocator: ^14.0.3</code>, <code>google_maps_flutter</code>, <code>flutter_map</code></td>
+      <td align="center"><img src="https://img.shields.io/badge/Verified-Passing-2ea44f?style=flat-square" alt="Passing" /></td>
     </tr>
   </tbody>
 </table>

@@ -124,7 +124,8 @@ class _StudentPageState extends State<StudentPage> {
         ],
       ),
 
-      // ปุ่ม +
+      // ปุ่ม + (จัดตำแหน่งกึ่งกลางสมมาตร)
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
         onPressed: addStudent,
         child: const Icon(Icons.add),
