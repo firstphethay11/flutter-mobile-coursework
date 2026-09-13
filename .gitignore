@@ -1,0 +1,40 @@
+# Flutter / Dart standard ignore
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.dill
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/**/build/
+**/android/app/build/
+
+# iOS
+**/ios/.generated/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Pods/
+
+# Windows
+**/windows/flutter/ephemeral/
+**/windows/x64/
+
+# Sensitive API Keys
+keyapi.txt
+**/keyapi.txt
+secrets.json
+
+# IDEs & OS
+.idea/
+.vscode/
+*.iml
+*.log
+.DS_Store
+Thumbs.db
